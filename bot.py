@@ -3,9 +3,9 @@ from telebot import apihelper
 from telebot import types
 import random
 
-apihelper.proxy = {'https':'socks5://171153472:iJIvKAmz@orbtl.s5.opennetwork.cc:999'}
+apihelper.proxy = {}
 
-bot = telebot.TeleBot('1015901320:AAHdd60aOBGMV3-BVkUuCW11nqZ3iSR8Yy4')
+bot = telebot.TeleBot()
 
 @bot.message_handler(commands = ['start'])
 def hello(message):
